@@ -1,0 +1,19 @@
+.nodoxing {
+    color: transparent;
+    font-style: italic;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 62px);
+    width: 100vw;
+}
+
+:global(.styleify) #about {
+    table, td {
+        border-style: none;
+    }
+}

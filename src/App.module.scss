@@ -1,0 +1,101 @@
+#clickToEnter {
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    width: 60vh; //yes, it is intentional just to make a square
+    height: 60vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & > *:not(img) {
+        position: absolute;
+
+        &:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, 0)}
+        &:nth-child(2) { top: 50%; left: 100%; transform: translate(-50%, -100%)}
+        &:nth-child(3) { top: 100%; left: 50%; transform: translate(-50%, -100%)}
+        &:nth-child(4) { top: 50%; left: 0; transform: translateY(-50%)}
+    }
+
+    a:visited {
+        color: orange;
+    }
+}
+
+:global(.styleify) {
+    :global(.card) {
+        padding: 16px;
+        border-radius: 8px;
+        background: linear-gradient(#b7bdf8, #c6a0f6, #f5bde6);
+        color: #000;
+        animation: card-zoom-out .75s ease-in-out;
+    }
+}
+
+:global(.styleify) #home {
+    &::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60vh; //yes, it is intentional just to make a square
+        height: 60vh;
+        border-radius: 50%;
+        border: inset 2px #fff;
+        animation: cirlce-zoom-in 1s ease-in-out;
+    }
+
+    & > *:not(img) {
+        text-decoration: none;
+        background: #c6a0f6;
+        padding: 4px 8px;
+        border-radius: 4px;
+        color: #000;
+
+        &:nth-child(1) { top: -12px}
+        &:nth-child(2) {left: 100%}
+        &:nth-child(3) { top: calc(100% + 14px)}
+        &:nth-child(4) { left: -37px}
+    }
+
+    & > * {
+        animation: buttons 1s ease-in-out;
+    }
+}
+
+@keyframes cirlce-zoom-in {
+    0% {
+        transform: scale(0) translate(-200%, -200%);
+    }
+    100% {
+        transform: scale(1) translate(-50%, -50%);
+    }
+}
+
+@keyframes card-zoom-out {
+    0% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes buttons {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
