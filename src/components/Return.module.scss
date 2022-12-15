@@ -1,0 +1,23 @@
+.returnButton {
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+:global(.styleify) .returnButton {
+    top: 16px;
+    left: 16px;
+    border-style: none;
+    background: #c6a0f6;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #000;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+
+    svg {
+        transform: rotate(180deg);
+    }
+}

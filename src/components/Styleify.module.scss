@@ -1,0 +1,32 @@
+.styleify-button {
+    position: fixed;
+    bottom: 16px;
+    right: 50%;
+    transform: translateX(50%);
+    font-family: "Helvetica";
+    cursor: pointer;
+    background: #c6a0f6;
+    border-style: none; &:active { border-style: none; }
+    padding: 4px 8px;
+    border-radius: 4px;
+    animation: button-appear .4s;
+}
+
+:global(.styleify) .styleify-button {
+    border-style: outset; &:active { border-style: inset; }
+    font-family: 'Times New Roman', Times, serif;
+    background-color: buttonface;
+    padding: 1px 6px;
+    border-radius: 0;
+    animation: none;
+}
+
+@keyframes button-appear {
+    0% {
+        transform: translateY(48px) translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) translateX(50%);
+    }
+}

@@ -1,6 +1,7 @@
 body {
     margin: 0;
     color: #fff;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .app {
@@ -12,10 +13,26 @@ body {
 .styleify {
     font-family: Helvetica;
     background: #24273a;
+    
+    button {
+        font-family: Helvetica;
+    }
 }
 
-h1 {
+button {
+    border-style: outset;
+    font-family: "Times New Roman", Times, serif;
+    &:active {
+        border-style: inset;
+    }
+}
+
+h1, h2 {
     margin: 0;
+}
+
+p {
+    text-align: justify;
 }
 
 table, td {

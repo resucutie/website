@@ -1,4 +1,5 @@
 import useStyleifyMode from "../hooks/useStyleifyMode"
+import styles from "./Styleify.module.scss"
 
 export default () => {
     const styleify = useStyleifyMode()
@@ -11,14 +12,7 @@ export default () => {
         }
     }
 
-    return <button onClick={changeStorage} style={{
-        position: "fixed",
-        bottom: 8,
-        right: "50%",
-        transform: "translateX(50%)",
-        borderStyle: styleify ? "outset" : undefined,
-        cursor: "pointer",
-    }}>
+    return <button onClick={changeStorage} className={styles['styleify-button']}>
         Do a styleify
     </button>
 }

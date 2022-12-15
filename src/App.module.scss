@@ -3,8 +3,11 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    gap: 100px;
     justify-content: center;
     align-items: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #home {
@@ -27,6 +30,17 @@
     a:visited {
         color: orange;
     }
+
+    a:link {
+        color: lightblue;
+    }
+
+    & > img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 :global(.styleify) {
@@ -37,39 +51,60 @@
         color: #000;
         animation: card-zoom-out .75s ease-in-out;
     }
+
+    #home {
+        &::before {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60vh; //yes, it is intentional just to make a square
+            height: 60vh;
+            border-radius: 50%;
+            border: inset 2px #fff;
+            animation: cirlce-zoom-in 1s ease-in-out;
+        }
+    
+        & > a {
+            text-decoration: none;
+            background: #c6a0f6;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: #000;
+            animation: buttons 1s ease-in-out;
+    
+            &:nth-child(1) { top: -12px}
+            &:nth-child(2) {left: 100%}
+            &:nth-child(3) { top: calc(100% + 14px)}
+            &:nth-child(4) { left: -37px}
+        }
+
+        & > img {
+            opacity: 0;
+            animation-name: buttons;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+    }
 }
 
-:global(.styleify) #home {
-    &::before {
-        content: "";
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60vh; //yes, it is intentional just to make a square
-        height: 60vh;
-        border-radius: 50%;
-        border: inset 2px #fff;
-        animation: cirlce-zoom-in 1s ease-in-out;
+@media (orientation: portrait) {
+    #home {
+        width: 60vw;
+        height: 60vw;
+
+        &::before {
+            width: 60vw !important;
+            height: 60vw !important;
+        }
     }
 
-    & > *:not(img) {
-        text-decoration: none;
-        background: #c6a0f6;
-        padding: 4px 8px;
-        border-radius: 4px;
-        color: #000;
-
-        &:nth-child(1) { top: -12px}
-        &:nth-child(2) {left: 100%}
-        &:nth-child(3) { top: calc(100% + 14px)}
-        &:nth-child(4) { left: -37px}
+    :global(.styleify .card) {
+        max-width: 80vw;
     }
-
-    & > * {
-        animation: buttons 1s ease-in-out;
-    }
-}
+} 
 
 @keyframes cirlce-zoom-in {
     0% {
