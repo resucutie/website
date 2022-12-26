@@ -1,7 +1,7 @@
 FROM node:alpine
 
 RUN npm i -g pnpm
-RUN pnpm i -g http-server
+RUN npm i -g http-server
 
 WORKDIR /app
 
