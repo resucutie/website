@@ -17,3 +17,24 @@
         border-style: none;
     }
 }
+
+:global(.irlnamepopup-content) {
+    padding: 8px;
+    background: #c6a0f6;
+    box-shadow: 0 0 16px #333;
+    border-radius: 4px;
+    font-family: Helvetica, sans-serif;
+    color: #000;
+    animation: appear .10s linear;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

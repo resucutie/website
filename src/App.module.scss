@@ -88,6 +88,10 @@
             animation-fill-mode: forwards;
         }
     }
+
+    :global(.popup-content) {
+        background: red;
+    }
 }
 
 @media (orientation: portrait) {
