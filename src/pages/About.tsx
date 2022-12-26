@@ -51,6 +51,7 @@ export default () => {
                         <li>Working on existing projects</li>
                         <li><img src='https://cyber.dabamos.de/88x31/minecraft.gif' /></li>
                         <li><img src="https://cyber.dabamos.de/88x31/vscbutton.gif" /></li>
+                        <li><a href='https://github.com/catppuccin/catppuccin' target="_blank">Catppuccin</a></li>
                     </td>
                 </tr>
             </table>
