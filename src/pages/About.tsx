@@ -1,10 +1,11 @@
+import { useMemo } from 'react';
 import Popup from 'reactjs-popup';
 import Spoiler from "../components/Spoiler"
-import useAge from "../hooks/useAge"
+import getAge from "../utils/getAge"
 import styles from "./About.module.scss"
 
 export default () => {
-    const age = useAge()
+    const age = useMemo(() => getAge(new Date("2005-11-27")), [])
 
     return <div id={styles["about"]}>
         <div className="card">
@@ -12,7 +13,7 @@ export default () => {
             <table>
                 <tr>
                     <td>Name</td>
-                    <Popup trigger={<td><span>A user</span></td>} position="top left" closeOnDocumentClick>
+                    <Popup trigger={<td><span>A user</span></td>} position="top left" closeOnDocumentClick arrow={false}>
                         <Spoiler>My IRL name is </Spoiler>
                         <span className={styles["nodoxing"]}>Pedro Santos Cartaxo Barbosa (pls dont dox me)</span>
                     </Popup>
