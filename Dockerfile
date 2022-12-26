@@ -13,4 +13,4 @@ COPY . .
 
 RUN pnpm build
 
-CMD ["http-server", "."]
+CMD ["http-server", "./dist"]
