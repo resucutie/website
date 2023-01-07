@@ -14,14 +14,14 @@ export default () => {
             <h1>About</h1>
             <table>
                 <tr>
-                    <td>Name</td>
+                    <td>Username</td>
                     <Popup trigger={<td><span>A user</span></td>} position="top left" closeOnDocumentClick arrow={false} className={styleify ? "irlnamepopup" : ""}>
                         <Spoiler>My IRL name is </Spoiler>
                         <span className={styles["nodoxing"]}>Pedro Santos Cartaxo Barbosa (pls dont dox me)</span>
                     </Popup>
                 </tr>
                 <tr>
-                    <td>Age</td>
+                    <td>Current age</td>
                     <td>{age}</td>
                 </tr>
                 <tr>
@@ -43,6 +43,13 @@ export default () => {
                         <li>Jest / Vitest</li>
                         <li>React Router</li>
                         <li>React Query</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Awards</td>
+                    <td>
+                        <li>Standout Project HappyCode. Age: 9 years old</li>
+                        <li>OBA Bronze medal, from 2022. Age: 16 years old</li>
                     </td>
                 </tr>
                 <tr>

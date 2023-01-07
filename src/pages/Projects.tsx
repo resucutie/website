@@ -14,7 +14,7 @@ export default () => {
             <div className="card">
                 <h2>hospitalurgency.com</h2>
                 <p>
-                    hospitalurgency.com is a website that shows the nearest hospitals close to your area that have the shortest queue. Currently it is just a concept, and all of the data were mocked up. Made for a schoolar project.
+                    hospitalurgency.com is a website that shows the nearest hospitals close to your area that have the shortest queue. Currently it is just a concept, and all of the data were mocked up. Maruska Tatiana Nascimento Silva Bueno, CEUB's computer engineering coordinator, has complimented this project. Made for a schoolar project.
                 </p>
                 <BigLinkButton href="http://hospitalurgency.auser.catvibers.me">Open the website</BigLinkButton>
             </div>
@@ -24,6 +24,13 @@ export default () => {
                     Culture is a website that shows cultural attractions near your location without the influence of an algorithm. Made for a schoolar project.
                 </p>
                 <BigLinkButton href="http://culutre.auser.catvibers.me">Open the website</BigLinkButton>
+            </div>
+            <div className="card">
+                <h2>Examer</h2>
+                <p>
+                    Examer is a CLI application for exam evaluation. Made for a schoolar project.
+                </p>
+                <BigLinkButton href="https://github.com/abUwUser/Examer">Check out on GitHub</BigLinkButton>
             </div>
         </div>
     </div>
