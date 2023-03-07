@@ -7,7 +7,7 @@ export default () => {
             <div className="card">
                 <h2>Quevi</h2>
                 <p>
-                    Quevi is an decentralized app focused on providing an uninterrupted and accessible studying process by randomly providing questions from exisitng exams (e.g. PAS, ENEM, etc.)
+                    Quevi is an decentralized app focused on providing an uninterrupted and accessible studying process by randomly providing questions from existing exams (e.g. PAS, ENEM, etc.)
                 </p>
                 <BigLinkButton href="https://github.com/Quevi-org">Check out on GitHub</BigLinkButton>
             </div>
