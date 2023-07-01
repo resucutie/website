@@ -27,14 +27,6 @@
         &:nth-child(4) { top: 50%; left: 0; transform: translateY(-50%)}
     }
 
-    a:visited {
-        color: orange;
-    }
-
-    a:link {
-        color: lightblue;
-    }
-
     & > img {
         position: absolute;
         top: 50%;
@@ -51,7 +43,7 @@
     :global(.card) {
         padding: 16px;
         border-radius: 8px;
-        background: linear-gradient(#b7bdf8, #c6a0f6, #f5bde6);
+        background: linear-gradient(#f5bdd0, #f89aa2, #ed8796);
         color: #000;
         animation: card-zoom-out .75s ease-in-out;
     }
@@ -72,7 +64,7 @@
     
         & > a {
             text-decoration: none;
-            background: #c6a0f6;
+            background: #ed8796;
             padding: 4px 8px;
             border-radius: 4px;
             color: #000;
@@ -91,7 +83,7 @@
     }
 }
 
-@media (orientation: portrait) {
+@media (orientation: portrait) or (aspect-ratio: 3/2) {
     #home {
         width: 60vw;
         height: 60vw;

@@ -9,13 +9,15 @@
     top: 16px;
     left: 16px;
     border-style: none;
-    background: #c6a0f6;
+    background: #ed8796;
     padding: 4px 8px;
     border-radius: 4px;
     color: #000;
     display: flex;
     gap: 6px;
     align-items: center;
+    z-index: 1000;
+    box-shadow: 0 0 8px 1px #222;
 
     svg {
         transform: rotate(180deg);

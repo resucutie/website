@@ -3,9 +3,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    width: 100vw;
     flex-wrap: wrap;
+    overflow-y: auto;
+    gap: 20px;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+
 
     :global(.card) {
         width: 30vw;
@@ -16,17 +21,17 @@
         border-style: outset;
     }
 
-    .scroll {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 5rem;
-        padding-top: 5rem;
-        height: 100%;
-        width: 100%;
-        gap: 20px;
-        overflow-y: auto;
-    }
+    // .scroll {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     padding-bottom: 5rem;
+    //     padding-top: 5rem;
+    //     height: 100%;
+    //     width: 100%;
+    //     gap: 20px;
+    //     overflow-y: auto;
+    // }
 }
 
 @media (orientation: portrait) {
@@ -41,16 +46,18 @@
 :global(.styleify) #projects :global(.card) {
     position: relative;
     border-style: none;
-    &:nth-child(2n) {
-        background: linear-gradient(105deg, #b7bdf8, #c6a0f6, #f5bde6);
-    }
-    &:nth-child(2n + 1) {
-        background: linear-gradient(305deg, #b7bdf8, #c6a0f6, #f5bde6);
-    }
+    background: #ed8796;
     h2 {
         border-style: none;
     }
+    padding: 0;
+
+    .content {
+        padding: 16px;
+    }
 }
+
+
 
 .bigLinkButton {
     width: 100%;
@@ -59,14 +66,19 @@
 
 :global(.styleify) .bigLinkButton {
     display: block;
-    background: #f5bde6;
-    border-style: none;
-    padding: 12px 16px;
-    border-radius: 8px;
-    box-shadow: 0 0 16px #333;
+    background: transparent;
+    border: none;
+    border-top: 1px solid #363a4f;
+    padding: 16px;
     text-align: center;
-    font-weight: 600;
-    color: rgb(34, 34, 34);
+    color: #000;
     cursor: pointer;
     text-decoration: none;
+    border-radius: 0 0 6px 6px;
+    transition: background .15s ease-in-out, color .15s ease-in-out;
+
+    &:hover {
+        background: #363a4f;
+        color: #fff;
+    }
 }

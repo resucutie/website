@@ -4,18 +4,42 @@ body {
     font-family: "Times New Roman", Times, serif;
 }
 
+a:visited {
+    color: red;
+}
+
+a:link {
+    color: white;
+}
+
 .app {
-    background: url("/space.png");
     width: 100vw;
     height: 100vh;
+
+    &::before {
+        position: fixed;
+        content: "";
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;        
+        background: url("/space.png");
+    }
+    &.styleify::before {
+        background: url("/wallpaper.png") right;
+    }
 }
 
 .styleify {
     font-family: Helvetica;
-    background: #24273a;
     
     button {
         font-family: Helvetica;
+    }
+
+    a {
+        color: #00f;
     }
 }
 
@@ -46,5 +70,4 @@ li {
 ul {
     margin: 0;
     padding-left: 16px;
-
 }
