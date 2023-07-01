@@ -9,6 +9,7 @@ import Links from './pages/Links'
 import Projects from './pages/Projects'
 import Banner from "./components/88x31"
 import AboutTab from './components/AboutTab'
+import OC from './pages/OC'
 
 function App() {
     const styleify = useStyleifyMode()
@@ -21,7 +22,7 @@ function App() {
             <Route path="/" element={<><Return /><Outlet /></>}>
                 <Route path="about" element={<><AboutTab /><Outlet /></>}>
                     <Route index element={<About />}></Route>
-                    <Route path="oc" element={<span>oh</span>}/>
+                    <Route path="oc" element={<OC />}/>
                 </Route>
                 <Route path="links" element={<Links />} />
                 <Route path="projects" element={<Projects />} />

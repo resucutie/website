@@ -3,9 +3,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 2rem);
     width: 100vw;
-    margin: 5rem 0;
+    margin-top: 2rem;
 }
 
 :global(.styleify) #about {
@@ -25,6 +25,10 @@
             width: 30%;
         }
     }
+}
+
+.ref {
+    max-width: 50vw;
 }
 
 @media (orientation: portrait) {
