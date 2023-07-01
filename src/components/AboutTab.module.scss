@@ -1,0 +1,28 @@
+.tabContainer {
+    position: sticky;
+    top: 16px;
+    left: 50%;
+    display: inline-flex;
+    transform: translateX(-50%);
+    gap: 10px;
+    z-index: 1000;
+}
+
+.tabElement {
+    &.active {
+        color: #fff;
+    }
+}
+
+:global(.styleify) .tabElement {
+    text-decoration: none;
+    padding: 4px 12px;
+    color: #fff;
+
+    &.active {
+        color: #000;
+        background: #c6a0f6;
+        border-radius: 4px;
+        box-shadow: 0 0 8px 1px #333;
+    }
+}
