@@ -14,7 +14,22 @@
 
 :global(.styleify) #about {
     table, td {
-        border-style: none;
+        border: none;
+    }
+    tr {
+        display: flex;
+        width: 100%;
+        padding: 12px 4px;
+        
+        &:not(:last-child){
+            border-bottom: 1px solid #0006;
+        }
+        
+        td:first-child {
+            width: 20%;
+            min-width: 20%;
+            max-width: 20%;
+        }
     }
 }
 

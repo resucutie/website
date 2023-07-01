@@ -43,6 +43,10 @@
     }
 }
 
+:global(.card) {
+    max-width: 30vw;
+}
+
 :global(.styleify) {
     :global(.card) {
         padding: 16px;
