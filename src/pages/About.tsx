@@ -1,14 +1,10 @@
 import { useMemo } from 'react';
-import Popup from 'reactjs-popup';
-import Spoiler from "../components/Spoiler"
-import useStyleifyMode from '../hooks/useStyleifyMode';
 import getAge from "../utils/getAge"
 import styles from "./About.module.scss"
 import useTimezoneClock from '../hooks/useTimezoneClock';
 
 export default () => {
     const age = useMemo(() => getAge(new Date("2005-11-27")), [])
-    const styleify = useStyleifyMode()
 
     return <div id={styles["about"]}>
         <div className="card">

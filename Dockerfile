@@ -1,7 +1,6 @@
 FROM node:alpine
 
 RUN npm i -g pnpm
-RUN npm i -g http-server
 
 WORKDIR /app
 
@@ -13,4 +12,4 @@ COPY . .
 
 RUN pnpm build
 
-CMD ["http-server", "./dist"]
+CMD ["pnpm", "prod"]
