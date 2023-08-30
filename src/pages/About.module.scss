@@ -28,7 +28,22 @@
 }
 
 .ref {
-    max-width: 50vw;
+    max-width: 40vw;
+    margin-top: 5vh;
+}
+:global(.styleify) .ref {
+    border-radius: 12px;
+}
+
+:global(.styleify) .checkMoreArts {
+    border-style: none;
+    background: #ed8796;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 @media (orientation: portrait) {
@@ -39,5 +54,9 @@
             font-weight: 600;
             width: 100%;
         }
+    }
+
+    .ref {
+        max-width: 90vw;
     }
 }
