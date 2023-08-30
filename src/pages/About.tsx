@@ -50,7 +50,7 @@ export default () => {
                     <td>Awards</td>
                     <td>
                         <ul>
-                            <li>⭐ Concurso Banco do Brasil 2023 - Agente de tecnologia, 102nd position in the disabled people category, at 17 years old. For context, the avaiable job offers in that category are 299.</li>
+                            <li>⭐ Concurso Banco do Brasil 2023 - Agente de tecnologia, 102nd position in the disabled people category, at 17 years old</li>
                             <br />
                             <li>Standout Project HappyCode. Age: 9</li>
                             <li>OBA Bronze medal, 2022. Age: 16</li>

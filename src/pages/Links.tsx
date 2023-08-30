@@ -12,7 +12,7 @@ export default () => {
             <LinkIcon icon={FaGithub} href="https://github.com/abUwUser">abuwuser</LinkIcon>
             <LinkIcon icon={FaDiscord} href="https://discord.com/users/264062457448759296">@resucutie</LinkIcon>
             <LinkIcon icon={FaMastodon} href="https://furry.engineer/@resu">@resu@furry.engineer</LinkIcon>
-            <LinkIcon icon={MdEmail} href="mailto:pedro.santos.cartaxo@gmail.com">Email <i>(not used for contact)</i></LinkIcon>
+            <LinkIcon icon={MdEmail} href="mailto:resucutie@proton.me">Email <i>(not used for contact)</i></LinkIcon>
             <LinkIcon icon={SiEpicgames}>abUwUser</LinkIcon>
             <LinkIcon icon={SiMatrix} href="https://matrix.to/#/@abuwuser:catvibers.me">@abuwuser:catvibers.me</LinkIcon>
             
