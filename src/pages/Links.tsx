@@ -1,6 +1,6 @@
 import styles from "./Links.module.scss"
-import { FaGithub, FaDiscord, FaTwitter, FaMastodon } from "react-icons/fa"
-import { SiMatrix, SiEpicgames } from "react-icons/si"
+import { FaGithub, FaDiscord, FaTwitter } from "react-icons/fa"
+import { SiMatrix, SiEpicgames, SiFirefish } from "react-icons/si"
 import { MdEmail } from "react-icons/md"
 import React from "react"
 
@@ -11,8 +11,8 @@ export default () => {
             <h3>Active</h3>
             <LinkIcon icon={FaGithub} href="https://github.com/abUwUser">abuwuser</LinkIcon>
             <LinkIcon icon={FaDiscord} href="https://discord.com/users/264062457448759296">@resucutie</LinkIcon>
-            <LinkIcon icon={FaMastodon} href="https://furry.engineer/@resu">@resu@furry.engineer</LinkIcon>
-            <LinkIcon icon={MdEmail} href="mailto:resucutie@proton.me">Email <i>(not used for contact)</i></LinkIcon>
+            <LinkIcon icon={SiFirefish} href="https://furry.engineer/@resu">@resu@kitsunes.club</LinkIcon>
+            <LinkIcon icon={MdEmail} href="mailto:resucutie@proton.me">Email</LinkIcon>
             <LinkIcon icon={SiEpicgames}>abUwUser</LinkIcon>
             <LinkIcon icon={SiMatrix} href="https://matrix.to/#/@abuwuser:catvibers.me">@abuwuser:catvibers.me</LinkIcon>
             
